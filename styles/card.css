@@ -10,7 +10,11 @@
   flex: 0 0 200px;
   margin: 3px;
 }
-
+.card p {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 90%;
+}
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
 }
