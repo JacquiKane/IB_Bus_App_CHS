@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 6</title>
+
+<link rel="stylesheet" href="../styles/ib.css" />
+    <link rel="stylesheet" href="../styles/infoCard.css" />
+    <link rel="stylesheet" href="../styles/page.css" />
+    <link rel="stylesheet" href="../styles/card.css" />
+    <link rel="stylesheet" href ="../styles/modal_styles.css" />
+    <link rel="icon" type="image/x-icon" href="../images/chs.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery UI ... gives dialog standard styles and buttons -->
+
+    <link
+      href="https://code.jquery.com/ui/1.13.0/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"/>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    
+<script>
+  const termsDictionaryUnit6 = {
+    id_stimulus_material: {
+      term: "Stimulus Material",
+      def: "Any resources provided to students to stimulate their understanding, analysis, and discussion of various business concepts, theories, and practices. These materials are designed to engage students and facilitate their exploration of real-world business situations."
+    },
+    id_research_p: {
+      term: "Business Research Project",
+      def: "An internal assessment for both SL and HL students."
+    },
+    id_business_management: {
+      term: "Business Management Toolkit",
+      def: "A collection of strategies, frameworks, models, and tools that students can use to analyze and address various business challenges and opportunities."
+    },
+    id_social_enterprises: {
+      term: "Social Enterprises",
+      def: "An organization that operates with the primary goal of addressing social or environmental issues, while also generating revenue to sustain its operations."
+    },
+    id_data_stimulus: {
+      term: "Data stimulus",
+      def: "Any data-driven resources provided to students to stimulate their analysis, interpretation, and discussion of business-related concepts, theories, and practices."
+    },
+    id_primary_research: {
+      term: "Primary Research",
+      def: "The process of collecting original data directly from the source for the purpose of addressing specific research objectives or answering research questions related to a business topic or issue."
+    },
+    id_ethical_business: {
+      term: "Ethical Business Concepts",
+      def: "Principles and practices that guide businesses to operate in a socially responsible and morally upright manner."
+    },
+    id_standard_deviation: {
+      term: "Standard Deviation",
+      def: "A measure of the variability or dispersion of a set of data points."
+    },
+    
+    id_swot_analysis: {
+      term: "SWOT Analysis",
+      def: "A strategic planning tool used to evaluate the Strengths, Weaknesses, Opportunities, and Threats related to a business."
+    },
+    id_steeple_analysis: {
+      term: "STEEPLE Analysis",
+      def: "This framework considers factors in the external environment that affect a business. STEEPLE analysis refers to the social, technological, economic, environmental, political, legal, and ethical aspects of the external environment."
+    },
+    id_business_contnet: {
+      term: "Business Content",
+      def: "The comprehensive body of knowledge, theories, concepts, and principles related to various aspects of business."
+    },
+    id_sustainable_business: {
+      term: "Sustainable Business Concepts",
+      def: "Principles and practices that enable businesses to achieve long-term economic success while simultaneously contributing to environmental protection, social equity, and ethical governance."
+    },
+    id_bcg_matrix: {
+      term: "BCG matrix",
+      def: "A business tool that you can use to help you create strategic, long-term plans regarding investment in competitiveness and market attractiveness."
+    },
+    id_ansoff_matrix: {
+      term: "Ansoff matrix",
+      def: "A strategic planning tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_absorption: {
+      term: "Absorption",
+      def: "Absorption occurs when an existing company buys another company that operates in a similar industry."
+    },
+    id_hofstedes_cultural_dimensions : {
+      term: "Hofstede's cultural dimensions",
+      def: "It shows the effects of a society's culture on the values of its members, and how these values relate to behavior, using a structure derived from factor analysis."
+    },
+    id_external_assessment: {
+      term: "External Assessment",
+      def: "A formal assessment of the business environment, including the external environment, and the external environment's impact."
+    },
+    id_pre_released_statement: {
+      term: "Pre-released Statement",
+      def: "A statement that is prepared before a business is released to the public."
+    },
+    id_business_management_g: {
+      term: "Business Management Glossary",
+      def: "A collection of terms and definitions that are used in the business management toolkit."
+    },
+    id_not_substantiated: {
+      term: "Not Substantiated",
+      def: "A term used to indicate that a concept or practice has not been fully understood or is not applicable to the current context."
+    },
+    id_business_context: {
+      term: "Business Context",
+      def: "The context in which a business operates, including its location, market, competitors, and other factors that influence its success."
+    },
+    id_business_environment: {
+      term: "Business Environment",
+      def: "The external environment that a business operates in, including its location, market, competitors, and other factors that influence its success."
+    },
+    id_business_environment_impact: {
+      term: "Business Environment Impact",
+      def: "The impact that the business environment has on its performance, including its location, market, competitors, and other factors that influence its success."
+    },
+    id_international_baccalaureate: {
+      term: "International Baccalaureate",
+      def: "A standardized test that measures academic achievement in a variety of subjects, including English, mathematics, science, and social studies."
+    },
+    
+    id_a01: {
+      term: "A01",
+      def: "A01 is a business management tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_a02: {
+      term: "A02",
+      def: "A02 is a business management tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_a03: {
+      term: "A03",
+      def: "A03 is a business management tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_a04: {
+      term: "A04",
+      def: "A04 is a business management tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_to_what_extent: {
+      term: "To what extent",
+      def: "To what extent refers to the extent to which a business's performance is affected by the external environment."
+    },
+    id_median: {
+      term: "Median",
+      def: "The median is the middle value of a set of data points."
+    },
+    id_business_application: {
+      term: "Business Application",
+        def: "A business application is a document that provides information about a business, its activities, and its goals."
+    },
+    id_business_leaders: {
+      term: "Business Leaders",
+      def: "A business leader is a person who is responsible for managing a business, including its finances, operations, and resources."
+    },
+    id_entrepreneurs: {
+      term: "Entrepreneurs",
+      def: "An entrepreneur is a person who starts a business, and is responsible for its success."
+    },
+    id_social_enterprises: {
+      term: "Social Enterprises",
+      def: "An organization that operates with the primary goal of addressing social or environmental issues, while also generating revenue to sustain its operations."
+    },
+    id_change_agents: {
+      term: "Change Agents",
+      def: "A change agent is a person who is responsible for making changes to a business, including its finances, operations, and resources."
+    },
+    id_stakeholders: {
+      term: "Stakeholders",
+      def: "A stakeholder is a person or organization that is affected by a business, including its finances, operations, and resources."
+    },
+    id_descriptive_statistics: {
+      term: "Descriptive Statistics",
+      def: "Descriptive statistics are used to analyze data and provide insights about the data's distribution, mean, median, mode,"
+    },
+    id_force_field_analysis: {
+      term: "Force Field Analysis",
+      def: "Force field analysis is a method used to analyze the strengths and weaknesses of a business, and to identify areas where the business can improve."
+    },
+    
+    id_bar_graph: {
+      term: "Bar graph",
+      def: "A diagram in which the numerical values of variables are represented by the height or length of lines or rectangles of equal width."
+    },
+    id_pie_Chart: {
+      term: "Pie chart",
+      def: "A pie chart is a circular statistical graphic which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice is proportional to the quantity it represents"
+    },
+    id_pictogram: {
+      term: "Pictogram",
+      def: "A graphical representation of data that shows the distribution of values across a range of categories."
+    },
+    id_sample_1: {
+      term: "Sample 1",
+      def: "Sample 1 is a business management tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_sample_2: {
+      term: "Sample 2",
+      def: "Sample 2 is a business management tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_sample_3: {
+      term: "Sample 3",
+      def: "Sample 3 is a business management tool that provides a framework to help executives, senior managers, and marketers devise strategies for future business growth."
+    },
+    id_mean: {
+    term: "Mean",
+      def: "The mean is the average value of a set of numbers."
+    },
+    id_mode: {
+    term: "Mode",
+      def: "The mode is the value that appears most often in a set of data."
+    }
+  };
+
+  const setUpTermsBox = () => {
+
+      console.log("Setting up terms box");
+
+    $("#termBox").dialog({
+
+      open: function () {
+        console.log("OPEN");
+        console.log($(this).data);
+        let key = $(this).data("id"); // the event object has been passed to the dialog prior to opening
+        console.log("opening dialog after pressing button:" + key); // Check value!
+        $(this).dialog({ title: termsDictionaryUnit6[key].term }); // Give title based on id
+        $(this).html(termsDictionaryUnit6[key].def);
+        return false;
+      },
+      autoOpen: false,
+      hide: "puff",
+      show: "puff",
+      closeOnEscape: true,
+      buttons: [
+        {
+          text: "Dismiss Term Information",
+          class: "cancelButtonClass",
+          width: "100%",
+          click: function () {
+            // Cancel code here
+            $(this).dialog("close");
+          },
+        },
+      ],
+    });
+    $(".keyTerm").click(function (e) {
+      console.log(e.currentTarget);
+      $("#termBox").data(e.currentTarget); // The important part .data() method, for passing into the modal
+      $("#termBox").dialog("open");
+      return false;
+    });
+  };
+
+  $(document).ready(setUpTermsBox);
+
+
+  
+
+</script>
+  </head>
+  
+  <body>
+    <div id="termBox" title="IB Business">Key term content here!</div>
+    <header  class="pageHeader"><div class="logo"></div>Unit 6 - Assessment </header>
+    <div class="wrapper">
+<!-- 6.1 Card Starting -->
+        <div class="infoCard">
+          <h1><p> 6.1 - Topic Overview</p></h1>
+<!-- 6.1 Summary -->
+<h2>  <p>Overview</p>   </h2>
+<p> Chapter 6.1 will focus on Papers 1 and 2 for the SL and HL <span id="id_external_assessment" class="keyTerm"><a href="#">External Assessment</a></span> Paper 1 will be common for SL and HL. The structure of paper 2 for both levels will be similar, but HL students can expect to be assessed on a wider range of topics. </p>
+
+  <!-- 6.1 SL/HL paper explanation. -->
+<h4><p>SL/HL Paper 1</p></h4>
+<p> Part of Paper 1 will be given in the form of a<span id="id_pre_released_statement" class="keyTerm"><a href="#">pre-released statement</a></span>This statement is deliberately broad in scope.  </p>
+  <!-- 6.1 Pre-Released Statement Info -->
+  <div>
+<h4><p>Pre-Released Statement</p></h4>
+<p> This statement for Paper 1 can contain information and terminology that is not in the<span id="id_business_management" class="keyTerm"><a href="#">Business Management Syllabus</a></span>.</p>
+<p>Remember that Business Management is in a constant state of change and the pre-released statement is designed to make the material for  the Paper 1 up to date and given  anticipated changes within Business Management.</p>  
+</div>
+<!-- 6.1 Summary End -->
+<!-- 6.1 SL/HL Paper 1 Preparation Highlights -->
+<h4><p>SL/HL Paper 1 Preparation Guidance</p></h4>
+<p> A useful way to begin is to re-read the<span id="id_pre_released_statement" class="keyTerm"><a href="#">pre-released statement</a></span>. While defining terms which are not in the<span id="id_business_management_g" class="keyTerm"><a href="#">Business Management Guide.</a></span></p>
+<p> It would be sensible to also research some organizations that are already operating in the industry or market that is the focus of the pre-released statement.</p>
+<p> A <span id="id_swot_analysis" class="keyTerm"><a href="#">SWOT</a></span>or<span id="id_steeple_analysis" class="keyTerm"><a href="#">STEEPLE analysis</a></span> of these organizations could be a really good starting point into understanding the pre-released statement for Paper 1.  </p>
+
+<!-- SWOT Analysis -->
+<div class="card">
+<h4>  <p>SWOT Analysis</p>   </h4>
+<p>SWOT analysis is a strategic planning tool used to evaluate the Strengths, Weaknesses, Opportunities, and Threats related to a business.</p>
+</div>
+<br>
+<br>
+
+<!-- STEEPLE Analysis -->
+<div class="card">
+<h4>  <p> STEEPLE Analysis</p>   </h4>
+<p>This framework considers factors in the external environment that affect a business. STEEPLE refers to the social, technological, economic, environmental, political, legal, and ethical aspects of the external environment.</p>
+</div>
+
+<h4><p>For Paper 1</p></h4>
+<p> It is expected of students to spend only 5 hours on the preparation of Paper 1. </p>
+<p> The final examinations answers must be in context to the case-study paper and industry or market that it focuses  on. </p>
+<p> It is extremely important that there should be no prepared answers and your responses must be applied to the business in the<span id="id_stimulus_material" class="keyTerm"><a href="#">stimulus material</a></span> </p>
+<!-- 6.1 SL/HL Paper 2 Preparation Highlights -->
+<h4><p style="text-align: center;"> For Paper 2</p></h4>
+<p>Students will receive an examination booklet where they can read the questions, and will write their answers to multiple sets of questions based on short case studies and stimulus material. </p>
+<p> Section A of Paper 2 will contain three quantitative questions which will all require a short answer. Section B questions will asses qualitative skills of the student. Like explanations and discussions regarding the case-study.</p>
+<p> For both sections the questions will be subdivided into parts. These parts will cover<span id="id_a01" class="keyTerm"><a href="#">A01</a></span> ,<span id="id_a02" class="keyTerm"><a href="#">A02</a></span>,<span id="id_a03" class="keyTerm"><a href="#">A03</a></span>and<span id="id_a04" class="keyTerm"><a href="#">A04</a></span></p>
+
+<!-- 6.1 Information about A01,A02,A03,A04 questions on Paper 1 and 2 -->
+
+<h4><p> A01,A02,A03,A04 Question Information</p></h4>
+<p> Assessment Objective questions carry the highest marks. They are more difficult because they require the student to have knowledge of<span id="id_business_contnet" class="keyTerm"><a href="#">business content</a></span>and<span id="id_business_application" class="keyTerm"><a href="#">business application</a></span> related to the business within the case study.</p>
+<p> One-Sided answers will not score high marks if there is no counter arguments. For an argument to score highly there needs to be arguments in favor and against.</p>
+<p>Similarly answers that are<span id="id_not_substantiated" class="keyTerm"><a href="#">not substantiated</a></span> will loose marks.</p>
+<p>Break even questions are extremely popular for both SL and HL. This is especially true for Paper 2 Section A</p>
+<p> For A04 questions it is important to show all of your work, especially for the calculate questions. Even if the final answer is incorrect the student can still receive partial marks for showing the work associated with the question.</p>
+</div>
+<!--END 6.1 Card Ending -->
+
+
+
+<!-- 6.2 Card Starting -->
+    <div class="infoCard">
+      <h1>  <p> 6.2 - Topic Overview</p>   </h1>
+      <p style="text-align: center;">External Assessment for guidance for HL paper 3(HL only)</p>
+      <!-- 6.2 Summary -->
+      <p>  Chapter 6.2 is for HL students only and will focus on Paper 3. SL students are encouraged to read through this material as there is additional information on<span id="id_business_leaders" class="keyTerm"><a href="#">business leaders</a></span>,<span id="id_entrepreneurs" class="keyTerm"><a href="#">entrepreneurs</a></span>,<span id="id_social_enterprises" class="keyTerm"><a href="#">social enterprises</a></span>and<span id="id_change_agents" class="keyTerm"><a href="#">change agents</a></span> There is also some guidance on choosing a social enterprise as the subject of the internal assessment.  </p>
+    <!-- 6.2 IB Mission Statement -->
+    <h4><p>The IB Mission Statement</p></h4>
+    <p>The International Baccalaureate aims to develop inquiring, knowledgeable <span id="id_international_baccalaureate" class="keyTerm"><a href="#">International Baccalaureate</a></span> and caring young people who help create a better and more peaceful world  through intercultural understanding and respect. </p>
+      <!-- 6.2 Aims Of The Business Management Course -->
+  <h4><p></p>6.2 The Aims Of The Business Management Course </h4>
+  <p> 1 Develop as confident creative and compassionate business leaders, entrepreneurs, social entrepreneurs and as change agents.</p>
+  <p> 2 Foster an informed understanding of ethical and sustainable business practices.</p>  
+  <p> 3 Explore the connections between individuals, businesses, and society.</p>  
+  <p> 4 Engage with decision making as a process and skill.</p>  
+
+    <!-- 6.2 Warning -->
+    <h4><p>HL Warning</p></h4>
+    <p> For paper 3 or HL papers only, Answers that are Too Generic will not score highly. You will not know the content until you are told to begin the examination, so prepared answers will not be possible.</p>
+    <p> There are 2 main reason for this.</p>
+    <p> 1 There are many Different Needs or <span id="id_stakeholders" class="keyTerm"><a href="#">Stakeholders</a></span>which could be part of the case study and there are an unlimited amount of challenges</p>
+    <p> 2 the stimulus will also be written to include a multitude of possible future courses of action</p> 
+
+    <!-- 6.2 The Stimulus Material -->
+    <h4><p>The Stimulus Material</p></h4>
+  <p>The Stimulus Material will comprise a variety of different items, which could be excerpts of emails, memos, social media posts, newspaper articles and so on.</p>
+  <p>There are three questions which need to be answered:</p>
+  <p><span id="id_a01" class="keyTerm"><a href="#">A01</a></span>question for 2 marks.   </a></p>  
+  <p><span id="id_a02" class="keyTerm"><a href="#">A02</a></span>question for 17 marks.   </a></p>  
+  <p><span id="id_a03" class="keyTerm"><a href="#">A03</a></span>question for 17 marks.   </a></p>
+  <p>There are a total of 25 marks for each paper.</p>
+    </div>
+    <!--END 6.2 Card Ending -->
+
+
+
+
+
+    <!-- 6.3 Card Starting -->
+      <div class="infoCard">
+        <h1>  <p> 6.3 - Topic Overview</p>   </h1>
+        <h4>  <p> Introduction To Internal Assessment Business Management</p>   </h4>
+        <p> This introduction give an overview of the internal assessment and highlight the importance of Business Management Guide. It also describe how "business research project" is an internal assessment for both the SL and HL student to take. Students are expected to study for about 20 hours and is provide guidance for planning the business project. There is really no "right" way to approach it but using and following 
+          <span id="id_research_p" class="keyTerm"><a href="#">research proposal </a></span> which provide guidance that can help make a great progress. </p>
+  <!--END 1 -->
+
+
+        <h4>  <p>The Purpose Of The Business Research Project And Contribution To Your Final Mark</p>    </h4>
+            <p> The purpose of this research project allow student to apply their skills, knowledge, and pursue personal interests. It also describe how the internal assessment help meet the requirements for SL and HL students and how the research project help achieve to the final mark. </p>   
+  <!--END 2 -->
+
+        <h4>  <p>Guidance On Starting the Business Research Project </p>   </h4>
+          <p> A guidance is where the topic being chosen must be connected to the course content and to one life. And where they can indicate one knowledge on the subject and offer an example to the proposal for the business research. </p> 
+
+  <!--END 3 -->
+
+      <h4>  <p>Requirements And Structure Of The Report</p>    </h4>
+      <p> This section describe the requirements and the need to select a real issue or problem to help develop research question and write a written report. This report should include introduction, main body, conclusion and have about 1,800 words in totals and should have primary and/or secondary sources. </p> 
+  <!--END 4 -->
+
+      <h4>  <p>The Importance Of Collecting Supporting Documents</p>    </h4>
+          <p> This importance outlines what is require for a supporting documents that should not be more than 3 years old and can include both video or audio file. It should include primary and secondary sources to support the documents.  </p>        
+  <!--END 5 -->
+
+      <h4>  <p>Guidance On The Research Process</p>    </h4>
+      <p> The research process is where research should be a trial-and-error process where students may research one or two organizations before they make their final research question. Teacher's can help provide milestones and checkpoints or assist them.  </p> 
+  <!--END 6 -->
+
+      <h4>  <p>The Choice Of An Organization And An Appropriate Business Concept</p>    </h4>
+          <p> A choice is the importance of choosing and making decision onto an organization and concept to help understand the subject matter including sustainability or ethics. It is also important to apply one concept and only one concept no more than one. </p> 
+    <!--END 7 -->
+
+          <h4>  <p>The Selection Of Appropriate Business Content (Theories) And Tools</p>    </h4>
+              <p> A selection is where it is important to select an relevant theories and tools that can help student understand and apply it to the organization that they are studying. It include using tools like a <span id="id_swot_analysis" class="keyTerm"><a href="#">SWOT analysis </a></span>, <span id="id_steeple_analysis" class="keyTerm"><a href="#">STEEPLE analysis </a></span>,  
+                <span id="id_bcg_matrix" class="keyTerm"><a href="#">BCG matrix </a></span> or <span id="id_ansoff_matrix" class="keyTerm"><a href="#">Ansoff matrix </a></span> and other to help student. </p> 
+  <!--END 8 -->
+
+          <h4>  <p>Revision Strategies - Business Management Content And Chunking</p>    </h4>
+              <p> A revision is an strategies in business management content and that revision is an activity where it require effective strategic to obtain information. It also describe the use of chunking, that involves breaking revision process into a short intervals and having a minutes break to allow <span id="id_absorption" class="keyTerm">
+                <a href="#">absorption </a></span> of marketing theory. This section highlight the importance of asking questions to approach learning and help recall information. </p> 
+  <!--END 9 -->
+
+      <h4>  <p>Asking Questions: An Inquiry Approach </p>   </h4>
+          <p>An inquiry approach is the need to ask questions such as <span id="id_a02" class="keyTerm"><a href="#">AO2 </a></span> and <span id="id_a03" class="keyTerm"><a href="#">AO3 </a></span> which also include the need for students to be able to explain and analyze the marketing mix <span id="id_to_what_extent" class="keyTerm">
+              <a href="#">to what extent </a></span> as an important piece in business management. The need to understand the elements of the marketing mix and be able to evaluate it which require a more in depth analysis. It provide guidance on revising for final stage and using techniques like writing notes or flashcards to help memory and asking necessary questions. </p> 
+  <!--END 10 --> 
+
+      <h4>  <p>Linking Business Content To Contexts And Concepts</p>    </h4>
+      <p> This linking concepts is where linking to different areas of business management practice like market research can benefit in learning and obtaining information which help deepen the knowledge of business content. It also use real-world examples and the importance of understanding business management concepts to enhance knowledge. </p> 
+  <!--END 11 -->
+
+      <h4>  <p>The Business Management Toolkit</p>   </h4>
+      <p> This business management toolkit is where students are given a chance to review the toolkit and being able to clarity and explain the use of these tools which can help assist them in decision making. This toolkit include <span id="id_swot_analysis" class="keyTerm"><a href="#">SWOT analysis </a></span>,  <span id="id_ansoff_matrix" class="keyTerm"><a href="#">Ansoff matrix </a></span>,
+        <span id="id_steeple_analysis" class="keyTerm"><a href="#">STEEPLE analysis </a></span>, <span id="id_descriptive_statistics" class="keyTerm"><a href="#">Descriptive statistics </a></span> and other tools for SL and HL students. It also describe HL only tools which include <span id="id_force_field_analysis" class="keyTerm">
+            <a href="#">Force field analysis </a></span>,  <span id="id_hofstedes_cultural_dimensions" class="keyTerm"><a href="#">Hofstede's cultural dimensions </a></span> and other tools. </p> 
+      </div>
+<!-- 6.3 Card Ending -->
+
+
+
+<!-- 6.4 Card Starting -->
+  <div class="infoCard">
+    <h1>  <p> 6.4 - Topic Overview</p>   </h1>
+        <!-- Prior knowledge of Descriptive Statistics -->
+        <h4>  <p">Prior knowledge of Descriptive Statistics</p>   </h4>
+        <p>Descriptive Statistics will be used in the IB course which aims to show how this knowledge can be applied to business Management as part of an inquiry approach.</p>
+        <!-- Prior Mathematical knowledge for Paper 2 -->
+        <h4>  <p>Prior Mathematical knowledge for Paper 2</p>   </h4>
+        <p>
+          <span id="id_mean" class="keyTerm"><a href="#">Mean </a></span><br><br> 
+          <span id="id_mode" class="keyTerm"><a href="#">Mode </a></span><br><br>   
+          <span id="id_median" class="keyTerm"><a href="#">Median </a></span><br><br>
+          <span id="id_standard_deviation" class="keyTerm"><a href="#">Standard Deviation </a></span><br><br>
+        </p>
+
+        <!-- Mean -->
+        <div class="card">
+        <h4>  <p>Mean</p>   </h4>
+        <p>The "average" number; found by adding all data points and dividing by the number of data points.</p>
+        </div>
+
+        <!-- Mode -->
+        <div class="card">
+        <h4>  <p>Mode</p>   </h4>
+        <p>The mode is the most common number that appears in your set of data.</p>
+        </div>
+        <!-- Median -->
+        <div class="card">
+        <h4>  <p>Median</p>   </h4>
+        <p>The median is the middle number in a sorted list of numbers and can be more descriptive of that data set than the average.</p>
+        </div>
+
+        <!-- Standard Deviation -->
+        <div class="card">
+        <h4>  <p>Standard Deviation</p>   </h4>
+        <p>Standard Deviation is a measure of dispersion or how close variables are grouped together around a mean value. Variables with a low Standard Deviation are closely tied to the mean. A set of variables with a high Standard Deviation imply that the values are not closely tied to the mean and have wide variability.</p>
+        </div>
+
+        <!-- Concept needed for paper 2  -->
+
+        <h4><p>For Paper 2</p></h4>
+        <p> Along with these mathematical concepts It is expected of students to learn these Business concepts like<span id="id_ethical_business" class="keyTerm"><a href="#">Ethical Business</a></span>,and 
+        <span id="id_sustainable_business" class="keyTerm"><a href="#">Sustainable Business</a></span>on the preparation of Paper 2.</p>
+
+        <!-- Ethical Business Concepts -->
+        <div class="card">
+        <h4>  <p>Ethical Business Concepts</p>   </h4>
+        <p>Ethical business concepts refer to principles and practices that guide businesses to operate in a socially responsible and morally upright manner.</p>
+        </div>
+        <!-- Sustainable Business Concepts -->
+        <div class="card">
+        <h4>  <p>Sustainable Business Concepts</p>   </h4>
+        <p>Sustainable business concepts refer to principles and practices that enable businesses to achieve long-term economic success while simultaneously contributing to environmental protection, social equity, and ethical governance.</p>
+        </div>
+        <!-- Graphs for Paper 2 -->
+        <h4>  <p>Graphs for Paper 2</p>   </h4>
+        <p>
+          <p>In Paper 2, there are many calculations students should be aware of so to display these results students should use
+            <span id="id_bar_graph" class="keyTerm"><a href="#">Bar graph</a></span>
+            <span id="id_pie_Chart" class="keyTerm"><a href="#">Pie Chart</a></span> and
+            <span id="id_pictogram" class="keyTerm"><a href="#">Pictogram</a></span>and there advantages and disadvantages and when to use.
+          </p>
+        </p>
+
+      <!-- Bar graph -->
+      <div class="card">
+        <h4>  <p>Bar graph</p>   </h4>
+        <p>A diagram in which the numerical values of variables are represented by the height or length of lines or rectangles of equal width.</p>
+        </div>
+
+      <!-- Pie Charts -->
+      <div class="card">
+      <h4>  <p>Pie charts</p>   </h4>
+      <p>A pie chart is a circular statistical graphic which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice is proportional to the quantity it represents</p>
+      </div>
+
+      <!-- Pictogram -->
+      <div class="card">
+      <h4>  <p>Pictogram</p>   </h4>
+      <p>A pictogram is a graphical symbol that conveys meaning through its visual resemblance to a physical object. Pictograms are used in systems of writing and visual communication. A pictography is a writing system which uses pictograms. Some pictograms, such as hazard pictograms, may be elements of formal languages.</p>
+      </div>
+
+        <!-- Sample Questions for Paper 2 -->
+        <h4>  <p>Sample Questions for Paper 2</p>   </h4>
+        <p>
+          Here are some sample questions for you to practices: <br> <br>
+          <span id="id_sample_1" class="keyTerm"><a href="#">Sample 1</a></span><br><br>
+          <span id="id_sample_2" class="keyTerm"><a href="#">Sample 2</a></span><br><br>
+          <span id="id_sample_3" class="keyTerm"><a href="#">Sample 3</a></span>
+        </p>
+  </div>
+  </div>
+  <!--END 6.4 Card Ending -->
+  </body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1</title>
+        <link rel="stylesheet" href ="../styles/ib.css" />
+        <link rel="stylesheet" href ="../styles/infoCard.css" />
+        <link rel="stylesheet" href ="../styles/page.css" />
+        <link rel="stylesheet" href ="../styles/modal_styles.css" />
+        <link rel="icon" type="image/x-icon" href="../images/chs.ico">
+        <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery UI ... gives dialog standard styles and buttons -->
+
+    <link
+      href="https://code.jquery.com/ui/1.13.0/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+
+</head>
+
+<body>
+     <!-- HTML part of dialog for terms/defs  -->
+
+    <!-- This is an outline of the dialog used for terms and definitions, initially hidden -->
+
+    <div id="termBox" title="IB Business">Key term content here!</div>
+
+    <!-- Trigger/Open The Modal when the key term is clicked -->
+    <header class="pageHeader"><div class="logo"></div>Unit 1 : What is a Business?</header>
+    <div class="wrapper">
+       <div class="infoCard">
+            <h3>1.1 Keywords</h3>
+            <p><span id="id_production_management" class="keyTerm"><a href="#">Production Management</a></span>: Oversees the manufacturing of products or the delivery of services.</p>
+            <p><span id="id_marketing" class="keyTerm"><a href="#">Marketing</a></span>: Develops customer interest and awareness as the product enters the market.</p>
+            <p><span id="id_finance_accounts" class="keyTerm"><a href="#">Finance/Accounts</a></span>: Designed for the fiscal management, oversight, and reporting of a business's economic viability.</p>
+            <p><span id="id_human_resources" class="keyTerm"><a href="#">Human resources</a></span>: Human resource departments ensure organizational efficiency to meet business goals and handle recruitment, training, and conflict management.</p>
+            <p><span id="id_primary_sector" class="keyTerm"><a href="#">Primary sector</a></span>: Extracts and produces raw materials from natural resources. It includes activities like agriculture, mining, forestry, and fishing.</p>
+            <p><span id="id_secondary_sector" class="keyTerm"><a href="#">Secondary sector</a></span>: Involves transforming raw materials from the primary sector into finished goods. It includes manufacturing industries such as automotive, construction, and food processing.</p>
+            <p><span id="id_tertiary_sector" class="keyTerm"><a href="#">Tertiary sector</a></span>: Known as the service sector, it provides services rather than goods. It includes a wide range of businesses like financial institutions, schools, hotels, and restaurants.</p>
+            <p><span id="id_quaternary_sector" class="keyTerm"><a href="#">Quaternary sector</a></span>: An extension of the tertiary sector and includes knowledge-based services such as information technology, research and development, education, and consulting.</p>
+
+            <h3>Nature of Business</h3>
+            <p>Creating a business takes the work of <span id="id_finance_accounts" class="keyTerm"><a href="#">financial</a></span> and <a href = "#" class="keyTerm" id = "id_human_resources">human resources</a>. This usually leads to a risk for the individual or the entrepreneur.</p>
+            <p>Example: The <span id="id_marketing" class="keyTerm"><a href="#">marketing</a></span> department of a fast-food company becomes very excited about the possibility of a zero saturated fat French fry, but the production department does not have the knowledge or financial resources to research and create this.</p>
+
+            <h3>Business Plan</h3>
+            <p>•	The aims of the business.</p>
+            <p>•	Details of existing and potential competition.<p>
+            <p>•	Amount of funding required with a timeline illustrating how the funding will be used.<p>
+            <p>•	<span id="id_finance_accounts" class="keyTerm"><a href="#">Finance</a></span> needed under different scenarios if the external factors change.<p>
+            <p>•	Timelines for implementation and a commitment to review aims if forecasts are not met.<p>
+            <p>•	A comprehensive <span id="id_marketing" class="keyTerm"><a href="#">marketing</a></span> plan with sales forecasts.<p>
+            <p>•	A projected profit and loss account and cash flow forecast.<p>
+        </div>
+        <div class="infoCard">
+            <h3>1.2 Private vs Public:</h3>
+            <p><b>Public companies</b> are entities that have sold a portion of themselves to the public via an initial public offering (IPO), meaning their shares are traded on stock exchanges and they must disclose business and financial activities to the public.</p>
+            <p><b>Private companies</b> are owned by their founders, management, or a group of private investors, and do not trade their shares on public markets. They are not required to disclose detailed information publicly and have more flexibility in their operations.</p>
+
+            <h3>Social Enterprise:</h3>
+            <p>A social enterprise is a business that prioritizes social objectives as its main goal. It operates with a commercial mindset to maximize societal and environmental benefits, reinvesting profits into social programs rather than distributing them to shareholders.</p>
+
+            <h3>Cooperatives:</h3>
+            <p>A cooperative is a private, member-owned business organization that's controlled by the people who use its products, supplies, or services. Cooperatives are formed voluntarily to meet members' common economic, social, and cultural needs and aspirations through a jointly-owned and democratically-controlled enterprise.</p>
+
+            <h3>NGO's:</h3>
+            <p>An NGO, or non-governmental organization, is a nonprofit group operating independently of government, dedicated to addressing social, environmental, or political issues. NGOs often focus on humanitarian activities, advocacy, and community development.</p>
+            
+            <h3>For-Profit:</h3>
+            <img src="forprofit.jpg" style="width: 100%; margin: 2px;">
+        </div>
+        
+          <div class="infoCard">
+            <h3>1.3 Business Objectives</h3>
+            <p>Vision And Business Statement</p>
+            <p>A <span id="id_mission_statement" class="keyTerm"><a href="#">Mission Statement</a></span> is a way of defining briefly and succinctly the reason or purpose for the business's existence. A <span id="id_vision_statement" class="keyTerm"><a href="#">Vision Statement</a></span> defines how the company sees itself evolving in the future.</p>
+            <p>There are typically 4 main objectives. <span id="id_ethical_objectives" class="keyTerm"><a href="#">Ethical Objectives</a></span> include a deliberate attempt by the company to take a position that is viewed as morally correct to stakeholders.</p>
+            <p>Profit maximization, survival/break-even, cost minimization, growth.</p>
+            <p>There are typically 2 main objectives: strategies and tactical objectives .</p>
+            <p>A <span id="id_strategy" class="keyTerm"><a href="#">strategy</a></span> can be defined as the longer-term plan with an aim for the business, driven by the vision of the owner. A <span id="id_tactic" class="keyTerm"><a href="#">tactic</a></span> or operational objective is much more short term in nature and is usually defined as a tool or mechanism designed to help achieve the overall strategic objective.</p>
+            <p><span id="id_csr" class="keyTerm"><a href="#">CSR</a></span> can be defined as "the continuing commitment by business to behave ethically and contribute to economic development." Source: Russell-Walling (2007)</p>
+            <p>The <span id="id_global_reporting_initiative" class="keyTerm"><a href="#">Global Reporting Initiative</a></span> provides a framework for companies to report on their CSR commitments.</p>
+        </div>
+           
+        
+        <div class="infoCard">
+            <h3>1.4 Stakeholders</h3>
+            <p>What is a Stakeholder?</p>
+            <p>A <span id="id_stake_holder" class="keyTerm"><a href="#">stakeholder</a></span> is a person, group, or system that affects or can be affected by an organization's operations.</p>
+            <p><span id="id_internal" class="keyTerm"><a href="#">Internal</a></span> include full and part-time employees, shareholders, managers, CEO with the board of directors.</p>
+            <p><span id="id_external" class="keyTerm"><a href="#">External</a></span> include suppliers with customers, special interest or pressure groups, competitors, government.</p>
+            <p>Conflict is likely due to different stakeholders having different interests.</p>
+            <p><span id="id_potential_conflict" class="keyTerm"><a href="#">Potential Conflict</a></span> include pricing for customers, managers being tasked with increasing production, CEO introducing changes to work schedules, and CEO's discontinuing products.</p>
+        </div>
+        
+                       
+       <div class="infoCard">
+        <h3></b>1.5 Growth and evolution:</b></h3>
+        <p>Guiding questions</p>
+        <li>What are <span class="keyTerm" id="id_economies_of_scale"><a href="#">economies of scale</a></span>, both internal and external, and <span class="keyTerm" id="id_diseconomies_of_scale"><a href="#">diseconomies of scale</a></span>?</li>
+        <li>What is the difference between internal and external growth?</li>
+        <li>Why do some organizations grow, and what is the most appropriate way for a business to grow externally?</li>
+        <li>Why do some organizations remain small?</li>
+
+        <h3></b>Economies of scale (A02)</b></h3>
+        <p><b>Chapter Summary:</b> This unit emphasizes the pivotal role of change across all chapters. As organizations expand, they tap into economies of scale, lowering long-term production costs. These economies can be internal <span class="keyTerm" id="id_firm_growth"><a href="#">firm growth</a></span> or external <span class="keyTerm" id="id_industry_expansion"><a href="#">industry expansion</a></span>. While giants like telecoms and car manufacturers enjoy vast economies of scale, small firms face hurdles in competing due to limited resources and market share.</p>
+
+
+        <h3></b>Type of economy of scale</b></h3>
+        <p></p><span class="keyTerm" id="id_financial"><a href="#">Financial</a></span></p>
+        <p><span class="keyTerm" id="id_purchasing"><a href="#">Purchasing</a></span></p>
+        <p><span class="keyTerm" id="id_risk_bearing"><a href="#">Risk-bearing</a></span></p>
+        <p><span class="keyTerm" id="id_marketing"><a href="#">Marketing</a></span></p>
+        <p><span class="keyTerm" id="id_research_and_development"><a href="#">Research and development</a></span></p>
+
+
+
+        <a href="#" class="keyTerm" id="id_pool_of_labor">Pool of available labour grows as industry expands</a>
+        <p><b>Financial:</b> Increased collateral and lenders' confidence reduce finance costs. This falls under internal factors.</p>
+        <p><b>Purchasing:</b> Bulk purchasing enables the acquisition of raw materials at lower costs. (Internal)</p>
+        <p><b>Risk-bearing:</b> Large corporations can take the risk of venturing into new markets and funding prototypes of products, with uncertain outcomes.</p>
+        <p><b>Marketing:</b> Advertising using media with very large customer reach (eg television) lowers unit costs dramatically.(External)</p>
+        <p><b>Research and development:</b> As an industry grows, firms can share research facilities, reducing the costs of new product development.(External)</p>
+        <p><b>Pool of available labour grows as industry expands:</b> As an industry grows, local labour migrates to other areas and people gain skills through work experience and/or attending training colleges.(External)</p>
+
+
+        <h3></b>Diseconomies of scale (A02)</b></h3>
+        <p>Large firms can face <span class="keyTerm" id="id_diseconomies_of_scale"><a href="#">diseconomies of scale</a></span>, Long-run unit costs may rise due to management challenges with organizational growth, causing communication issues, demotivation, and quality concerns among staff. Multinational firms might also face difficulties coordinating supply chains across regions, elevating expenses.</p>
+
+        <h3></b>The difference between internal and external growth (A02)</b></h3>
+        <p><span class="keyTerm" id="id_internal_growth"><a href="#"></a><b>Internal growth:</b></span> Organizations achieve internal growth, or organic growth, by selling more existing products to expand market share. It offers control over expansion, especially valued by private and family-owned businesses.</p>
+        <p><span class="keyTerm" id="id_external_growth"><a href="#"></a><b>External growth:</b></span> An organization can also try to grow externally, which is often referred to as external growth. Methods of external growth include:
+
+
+        <p><span class="keyTerm" id="id_joint_ventures"><a href="#">Joint ventures</a></span></p>
+        <p><span class="keyTerm" id="id_strategic_alliances"><a href="#">Strategic alliances</a></span></p>
+        <p><span class="keyTerm" id="id_takeovers"><a href="#">Takeovers</a></span></p>
+        <p><span class="keyTerm" id="id_franchising"><a href="#">Franchising</a></span></p>
+        <p><span class="keyTerm" id="id_mergers"><a href="#">Mergers and acquisitions</a></span></p>
+
+        <h3></b>Reasons some organizations grow, and external growth methods (A03)</b></h3>
+        <p>Organizations aim to grow due to various reasons:</p>
+        <ul>
+            <li>Larger size provides greater financial resilience against external changes, as seen during the COVID-19 pandemic.</li>
+            <li>Growth allows for taking bigger risks with potential for higher rewards, fostering innovation.</li>
+            <li>Increased growth and profitability attract investors and capital, leading to further success.</li>
+            <li>However, concerns about management control, communication challenges, and overconfidence among industry leaders have emerged.</li>
+        </ul>
+
+        <h3></b>External growth methods Joint ventures and strategic alliances:</b></h3>
+        <p>External growth methods such as joint ventures and strategic alliances involve collaboration between firms to achieve mutual benefits:</p>
+        <ul>
+            <li><span class="keyTerm" id="id_joint_ventures"><a href="#">Joint Ventures:</a></span> Agreements between two or more firms to share risks, capital, and expertise in a project, typically within the same industry. Joint ventures facilitate shared resources and knowledge.</li>
+            <li><span class="keyTerm" id="id_strategic_alliances"><a href="#">Strategic Alliances:</a></span> Similar to joint ventures but less formal, with no transfer of ownership. These alliances still allow firms to collaborate on projects or ventures without establishing a separate entity.</li>
+        </ul>
+        <p>An example is entering a foreign market: a firm may form a joint venture or strategic alliance with a local company to leverage their market knowledge or labor resources. This partnership can lead to cost and time savings and help avoid costly mistakes.</p>
+        <p>For more detailed insights into international market entry challenges and opportunities, refer to chapter 4.6.</p>
+
+        <h3></b>Mergers and acquisitions and takeovers:</b></h3>
+        <p>Some textbooks confuse mergers and acquisitions (M&As) with takeovers, but they differ in mutual agreement. Takeovers can be hostile, like Nestlé's acquisition of Rowntree against protests. Three main types of M&As exist:</p>
+        <ul>
+            <li><span class="keyTerm" id="id_horizontal"><a href="#">Horizontal:</a></span> acquiring a rival for market share and economies of scale.</li>
+            <li><span class="keyTerm" id="id_vertical"><a href="#">Vertical:</a></span>acquiring a business in the supply chain for control.</li>
+            <li><span class="keyTerm" id="id_conglomerate"><a href="#">Conglomerate:</a></span> acquiring unrelated businesses to avoid R&D costs, but risky due to management challenges. Some mergers fail due to culture clashes, diseconomies of scale, and CEO hubris.</li>
+        </ul>
+
+        <h3></b>Franchising:</b></h3>
+        <p>Franchising: Franchisor sells business idea to franchisee. McDonald's, in "The Founder," showcases success through global expansion via franchising.</p>
+
+
+        <h3></b>IB Learner Profile:</b></h3>
+        <p>Franchising, exemplified by McDonald's, showcases diverse models. Exploring a different franchise in your country can enrich business research. Benefits include shared brand recognition, established business systems, and mutual growth opportunities.</p>
+
+
+        <h3></b>Benefits to the Franchisor and Benefits to the Franchisee:</b></h3>
+        <span class="keyTerm" id="id_ene">Benefits to the Franchisor:</span>
+        <ul>
+            <li>Increased brand awareness over larger areas at minimal cost.</li>
+            <li>Royalties with minimal risk after initial payment.</li>
+            <li>Motivated franchisees committed to business model.</li>
+        </ul>
+
+
+        <span class="keyTerm" id="id_ene">Benefits to the Franchisee:</span>
+        <ul>
+            <li>Run a business with established brand, reducing start-up costs.</li>
+            <li>Receive training, equipment, and expertise from franchisor.</li>
+            <li>Potential economies of scale if supplied with materials.</li>
+        </ul>
+
+        <span class="keyTerm" id="id_cha">Challenges:</span>
+
+        <ul>
+            <li>Flexibility in franchise agreements varies, affecting growth opportunities.</li>
+            <li>Clustering and cannibalization can occur, impacting franchisee competition.</li>
+            <li>Standardization may limit entrepreneurial creativity.</li>
+        </ul>
+        <p><strong>Question for reflection:</strong></p>
+        <p>Has the franchise growth model increased the chances for economic sustainability at the expense of creativity? </p>
+
+        <h3>Revision checklist:</h3>
+        <ul>
+            <li>The chapter discusses reasons for organizational growth, focusing on internal and external economies of scale for cost advantages.</li>
+            <li>External growth strategies include franchising, joint ventures, strategic alliances, and mergers/acquisitions.</li>
+            <li>Some organizations prefer staying small to avoid diseconomies of scale, target niche markets, or maintain control, notably family-owned companies like Lego, Illy, and Ferrari.</li>
+        </ul>
+    </div>
+
+    <div class="infoCard">
+        <h3>1.6 Multinational Companies</h3>
+        <p>How can we evaluate the impact of multinational corporations (<span class="keyTerm" id="id_mnc"><a href="#">MNCs</a></span>) on the host countries?</p>
+        <p>Multinational corporations (MNCs) operate and control resources outside their home country, often outsourcing production processes. Notable examples include <span class="keyTerm" id="id_ikea"><a href="#">Ikea</a></span>, <span class="keyTerm" id="id_subway"><a href="#">Subway</a></span>, and <span class="keyTerm" id="id_apple"><a href="#">Apple</a></span>. While MNCs like Costco, Ikea, and Walmart are welcomed by stakeholders like potential employees and consumers, they also face criticism for job displacement and impacts on local businesses.</p>
+
+        <h3>The Impact of Multinational Companies on the Host Country (A03)</h3>
+        <p>MNCs bring benefits such as job creation, revenue for host governments, technology transfer, and increased choice of goods and services. However, they also pose challenges such as unfair competition for local producers and potential tax avoidance practices. Perspectives on their impact vary, with some emphasizing economic benefits and others highlighting ethical concerns.</p>
+
+        <p>MNCs often operate across different sectors of the economy, including the <span class="keyTerm" id="id_primary_sector"><a href="#">primary sector</a></span>, which involves activities related to natural resources extraction and agriculture.</p>
+
+        <h3>Examples of Ireland and Singapore</h3>
+        <p>The Irish economy was transformed by encouraging <span class="keyTerm" id="id_mnc"><a href="#">multinational corporation (MNC)</a></span> activity, leading to mixed results. Singapore's economic rise was also fueled by collaboration with <span class="keyTerm" id="id_mnc"><a href="#">MNCs</a></span> in various sectors, resulting in impressive growth and local business development. Recent investigations reveal that some <span class="keyTerm" id="id_primarysector"><a href="#">multinational corporations (MNCs)</a></span> legally avoid paying taxes in the countries they operate in, opting for jurisdictions with more favorable tax laws. While journals like The Economist credit <span class="keyTerm" id="id_mnc"><a href="#">MNCs</a></span> for driving economic wealth, their influence has faced challenges from pressure groups and other stakeholders. Your perspective determines which view is more persuasive.</p>
+
+        <h3>Revision Checklist</h3>
+        <ul>
+            <li><span class="keyTerm" id="id_pos">Positive Impact of MNC Activity:</a></span> Theoretically, MNC activity in a host country tends to have positive effects, including creating employment opportunities, introducing new technology, and attracting capital investment.</li>
+            <li><span class="keyTerm" id="id_cha">Challenges for Local Competitors:</a></span> Local competitors may struggle with MNC activity, as it can lead to increased wages to compete for talent.</li>
+            <li><span class="keyTerm" id="id_ethical_concerns"><a href="#">Ethical Concerns:</a></span> MNCs face scrutiny over tax practices, as they employ legal tax avoidance strategies and shift profits globally, potentially reducing their tax contributions to host countries.</li>
+        </ul>
+       </div>
+     </div>
+
+    </div>
+</body>
+<script>
+    const termsDictionaryUnit1 = {
+
+
+id_production_management: {
+    term: "Production Management",
+    def: "Oversees the manufacturing of products or the delivery of services."
+},
+id_marketing: {
+    term: "Marketing",
+    def: "Develops customer interest and awareness as the product enters the market."
+},
+id_finance_accounts: {
+    term: "Finance/Accounts",
+    def: "Designed for the fiscal management, oversight, and reporting of a business's economic viability."
+},
+id_human_resources: {
+    term: "Human Resources",
+    def: "Human resource departments ensure organizational efficiency to meet business goals and handle recruitment, training, and conflict management."
+},
+id_primary_sector: {
+    term: "Primary Sector",
+    def: "Extracts and produces raw materials from natural resources. It includes activities like agriculture, mining, forestry, and fishing."
+},
+id_secondary_sector: {
+    term: "Secondary Sector",
+    def: "Involves transforming raw materials from the primary sector into finished goods. It includes manufacturing industries such as automotive, construction, and food processing."
+},
+id_tertiary_sector: {
+    term: "Tertiary Sector",
+    def: "Known as the service sector, it provides services rather than goods. It includes a wide range of businesses like financial institutions, schools, hotels, and restaurants."
+},
+id_quaternary_sector: {
+    term: "Quaternary Sector",
+    def: "An extension of the tertiary sector and includes knowledge-based services such as information technology, research and development, education, and consulting."
+},
+id_mission_statement: {
+    term: "Mission Statement",
+    def: "A Mission Statement is a way of defining briefly and succinctly the reason or purpose for the business's existence."
+
+},
+id_vision_statement: {
+    term: "Vision Statement",
+    def: "A Vision Statement defines how the company sees itself evolving in the future."
+},
+id_ethical_objectives: {
+    term: "Ethical Objectives",
+    def: "There are typically 4 main objectives. Ethical Objectives include a deliberate attempt by the company to take a position that is viewed as morally correct to stakeholders."
+},
+id_strategy: {
+    term: "Strategy",
+    def: "A strategy can be defined as the longer-term plan with an aim for the business, driven by the vision of the owner."
+},
+id_tactic: {
+    term: "Tactic",
+    def: "A tactic or operational objective is much more short term in nature and is usually defined as a tool or mechanism designed to help achieve the overall strategy."
+},
+id_csr: {
+    term: "CSR",
+    def: "CSR can be defined as \"the continuing commitment by business to behave ethically and contribute to economic development.\" Source: Russell-Walling (2007)"
+},
+
+id_global_reporting_initiative: {
+    term: "Global Reporting Initiatives",
+    def: "The Global Reporting Initiative provides a framework for companies to report on their CSR commitments."
+},
+
+id_stake_holder: {
+    term: "Stakeholder",
+    def: "A stakeholder is a person, group, or system that affects or can affected by an organization's operations."
+},
+
+id_internal: {
+    term: "Internal",
+    def: "Internal include full and part-time employees, shareholders, managers, CEO with board of directors."
+},
+
+id_external: {
+    term: "External",
+    def: "External include suppliers with customers, special interest or pressure groups, competitors, government."
+},
+
+id_potential_conflict: {
+    term: "Potential Conflict",
+    def: "Potential Conflict include pricing for customers, managers being tasked with increasing production, CEO introducing changes to work schedules, and CEO's discontinuing products."
+},
+
+id_mnc: {
+    term: "MNC",
+    def: "Multinational corporations (MNCs) operate and control resources outside their home country, often outsourcing production processes."
+},
+
+id_economies_of_scale: {
+    term: "economies of scale",
+    def: "Economies of scale refer to cost advantages gained when production increases, leading to lower average costs per unit produced."
+},
+
+id_diseconomies_of_scale: {
+    term: "diseconomies of scale",
+    def: "Diseconomies of scale occur when a company expands so much that costs per unit increase, leading to inefficiency."
+},
+
+id_firm_growth: {
+    term: "firm growth",
+    def: "Firm growth entails strategic expansion, innovation, market responsiveness, and efficient resource utilization for sustained development."
+},
+
+id_industry_expansion: {
+    term: "industry expansion",
+    def: "Global industry expansion driven by technological innovation, market demand, and strategic investment in emerging sectors."
+},
+
+id_financial: {
+    term: "Financial",
+    def: "Increased collateral and lenders' confidence reduce finance costs. This falls under internal factors."
+},
+
+id_purchasing: {
+    term: "Purchasing",
+    def: "Bulk purchasing enables the acquisition of raw materials at lower costs. (Internal)"
+},
+
+id_risk_bearing: {
+    term: "Risk-bearing",
+    def: "Large corporations can take the risk of venturing into new markets and funding prototypes of products, with uncertain outcomes"
+},
+
+id_marketing: {
+    term: "Marketing",
+    def: "Advertising using media with very large customer reach (eg television) lowers unit costs dramatically.(External)"
+},
+id_research_and_development: {
+        term: "Research and development",
+        def: "As an industry grows, firms can share research facilities, reducing the costs of new product development.(External)"
+    },
+id_pool_of_labor: {
+        term: "Pool of available labour grows as industry expands",
+        def: "As an industry grows, locallabour migrates to otherareas and people gain skills through work experience and/or attending training colleges.(External)"
+    },
+id_diseconomies_of_scale: {
+        term: "diseconomies of scale",
+        def: "Diseconomies of scale occur when a company expands so much that costs per unit increase, leading to inefficiency."
+    },
+id_internal_growth: {
+        term: "Internal growth",
+        def: "Nurturing seeds of potential, flourishing within, transformative journey of self-discovery."
+    },
+id_external_growth: {
+        term: "External growth",
+        def: "Expanding through acquisitions, mergers, or strategic partnerships for organizational growth."
+    },
+id_joint_ventures: {
+        term: "Joint ventures",
+        def: "Collaborative ventures: strategic alliances for mutual growth and innovation."
+    },
+id_strategic_alliances: {
+        term: "Strategic alliances",
+        def: "Collaboration, synergy, mutual benefit, alliances shape strategic business landscapes."
+    },
+id_takeovers: {
+        term: "Takeovers",
+        def: "In a takeover, the company making the bid is the acquirer and the company it wishes to take control of is called the target."
+    },
+id_franchising: {
+        term: "Franchising",
+        def: "A franchise is a business model in which an individual (the franchisee) operates a business using the name, products, services, and processes of a larger company (the franchisor)."
+    },
+id_mergers: {
+        term: "Mergers and Acquisitions",
+        def: "The term mergers and acquisitions (M&A) refers to the consolidation of companies or their major business assets through financial transactions between companies."
+    },
+id_horizontal: {
+        term: "Horizontal",
+        def: "Level, straight, parallel to the horizon or ground surface. "
+    },
+id_vertical: {
+        term: "Vertical",
+        def: "Upward climb, tenacity defines those who reach heights. Aim high. "
+    },
+id_conglomerate: {
+        term: "Conglomerate",
+        def: "A conglomerate: diverse, expansive, multifaceted, intertwining industries, an economic powerhouse."
+    },
+id_Muc: {
+        term: "",
+        def: ""
+    },
+id_primary_sector: {
+        term: "primary sector",
+        def: "The primary sector involves extracting raw materials like farming, mining, fishing, and forestry activities."
+    },
+
+id_ikea: {
+        term: "Ikea",
+        def: "IKEA is a Swedish multinational conglomerate that designs and sells ready-to-assemble furniture, kitchen appliances, decoration, home accessories, and various other goods and home services."
+    },
+
+id_subway: {
+        term: "Subway",
+        def: "Subway is an American multinational fast food restaurant franchise that specializes in submarine sandwiches and wraps."
+    },
+
+id_apple: {
+        term: "Apple",
+        def: "Apple is an American multinational corporation and technology company headquartered in Cupertino, California, in Silicon Valley. It designs, develops, and sells consumer electronics, computer software, and online services."
+    },
+
+id_ethical_concerns: {
+        term: "Ethical concerns",
+        def: "Ethical concerns arise when actions clash with values, impacting individuals, societies, or the environment negatively."
+    }
+};
+
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////////////////////
+
+const setUpTermsBox = () => {
+
+console.log("Setting up terms box");
+
+$("#termBox").dialog({
+
+open: function () {
+
+console.log("OPEN");
+
+console.log($(this).data);
+
+let key = $(this).data("id"); // the event object has been passed to the dialog prior to opening
+
+console.log("opening dialog after pressing button:" + key); // Check value!
+
+$(this).dialog({ title: termsDictionaryUnit1[key].term }); // Give title based on id
+
+$(this).html(termsDictionaryUnit1[key].def);
+
+return false;
+
+},
+
+autoOpen: false,
+
+hide: "puff",
+
+show: "puff",
+
+closeOnEscape: true,
+
+buttons: [
+
+{
+
+text: "Dismiss Term Information",
+
+class: "cancelButtonClass",
+
+width: "100%",
+
+click: function () {
+
+  // Cancel code here
+
+  $(this).dialog("close");
+
+},
+
+},
+
+],
+
+});
+
+$(".keyTerm").click(function (e) {
+
+console.log(e.currentTarget);
+
+$("#termBox").data(e.currentTarget); // The important part .data() method, for passing into the modal
+
+$("#termBox").dialog("open");
+
+return false;
+
+});
+
+};
+
+
+
+$(document).ready(setUpTermsBox);
+    </script>
+</html>

@@ -1,0 +1,23 @@
+/** @format */
+
+.pageHeader {
+  width: 99vw;
+  border: 5px solid #17276c;
+  background-color: #f3d168;
+  height: 50px;
+  font-size: 200%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/chs.png");
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin-left: 3px;
+}

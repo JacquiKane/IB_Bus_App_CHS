@@ -1,0 +1,21 @@
+/** @format */
+
+.wrapper {
+  display: flex;
+  border: 5px solid #17276c;
+  background-color: #f3d168;
+  width: 99vw;
+  flex-wrap: wrap;
+  padding: 3px;
+  align-items: flex-start;
+}
+
+header {
+  width: 99vw;
+  border: 5px solid #17276c;
+  background-color: #b1b5b9;
+  height: 100px;
+  font-size: 200%;
+  text-align: center;
+  padding-top: 10px;
+}

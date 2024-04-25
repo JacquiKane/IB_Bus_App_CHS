@@ -1,0 +1,16 @@
+.ui-widget-header,
+      .ui-state-default,
+      ui-button {
+        background: hsl(64, 98%, 51%);
+        border: 1px solid #320dec;
+        color: #3b0ecd;
+        font-weight: bold;
+      }
+      .ui-dialog {
+        background: palegoldenrod;
+      }
+      .modalPos {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+      }
