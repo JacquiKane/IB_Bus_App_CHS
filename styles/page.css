@@ -10,6 +10,13 @@
   padding-top: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .pageHeader {
+    height: 100px;
+  }
+}
+
+
 .logo {
   background-repeat: no-repeat;
   background-position: center;
